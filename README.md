@@ -52,3 +52,69 @@ const newArray = letters.map(item => item + '++');
 console.log('original', letters);
 console.log('new', newArray);
 ```
+
+```js
+original [ 'a', 'b', 'c' ]
+new [ 'a++', 'b++', 'c++' ]
+```
+
+### Map Reloaded
+Array con Objetos 
+
+1.- Obtener el valor total
+
+```js
+const orders = [
+  {
+    customerName: "Nicolas",
+    total: 60,
+    delivered: true,
+  },
+  {
+    customerName: "Zulema",
+    total: 120,
+    delivered: false,
+  },
+  {
+    customerName: "Santiago",
+    total: 180,
+    delivered: true,
+  },
+  {
+    customerName: "Valentina",
+    total: 240,
+    delivered: true,
+  },
+];
+
+console.log("original", orders);
+const rta = orders.map((item) => item.total);
+console.log("rta", rta);
+```
+
+2.- Agregar nuevo atributo Tax
+
+```js
+const rta3 = orders.map((item) => {
+  return {
+    ...item,
+    tax: 0.19,
+  };
+});
+console.log("rta3", rta3);
+console.log("original", orders);
+```
+```js
+rta3 [
+  { customerName: 'Nicolas', total: 60, delivered: true, tax: 0.19 },
+  { customerName: 'Zulema', total: 120, delivered: false, tax: 0.19 },
+  { customerName: 'Santiago', total: 180, delivered: true, tax: 0.19 },
+  { customerName: 'Valentina', total: 240, delivered: true, tax: 0.19 }
+]
+original [
+  { customerName: 'Nicolas', total: 60, delivered: true },
+  { customerName: 'Zulema', total: 120, delivered: false },
+  { customerName: 'Santiago', total: 180, delivered: true },
+  { customerName: 'Valentina', total: 240, delivered: true }
+]
+```
