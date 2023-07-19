@@ -8,6 +8,10 @@
 </head>
 <body>
     <div id="app"></div>
+    <p>Ejercicio Duplicar Valores Arrays</p>
+    <div>Input:  2, 4, 5, 6, 8</div>
+    <div id="prueba"></div>
+
     <script>
         // renderizado html usando map
         // El método join() une todos los elementos de una matriz  en una cadena y devuelve esta cadena.
@@ -20,6 +24,11 @@
             return `<li>${product.title} - ${product.price}</li>`;
         })
         app.innerHTML = list.join('');
+
+        const numbers = [2, 4, 5, 6, 8];
+        const prueba = document.getElementById('prueba');
+        const dobles = numbers.map(item => item * 2);
+        prueba.innerHTML = `Output: ${dobles}`;
     </script>
 </body>
 </html>
