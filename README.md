@@ -140,3 +140,18 @@ const rta = words.filter(item => item.length >= 6)
 console.log('rta', rta);
 console.log('original', words );
 ```
+
+### Reduce
+El método reduce es inmutable y consiste retornar un solo valor del array iterado a partir de una función (callback) que indica de qué manera se itera cada elemento para reducirlo.
+
+Este método recibe dos argumentos:
+
+- La función que itera y reduce cada elemento del array. (obligatorio)
+- El valor inicial que utilizará como argumento la función. Si no se especifica, en la primera iteración el valor inicial será el primer elemento del array y no ejecuta la función
+
+```js
+const totals = [1,2,3,4];
+
+const rta = totals.reduce((sum, element) => sum + element, 0)
+console.log('rta reduce', rta);
+```
