@@ -118,3 +118,25 @@ original [
   { customerName: 'Valentina', total: 240, delivered: true }
 ]
 ```
+
+
+### Filter
+filter() lo que hace es filtrar el array original en base a una condición, 
+los que la cumplan estaran en el nuevo array creado.
+
+Por lo tanto filter() es inmutable y el nuevo array creado solamente puede contener:
+
+- cero coincidencias (array 0 elementos)
+- todas coincidencias 
+- algunas coincidencias
+- Nunca retorna más elementos que un array original
+
+```js
+// Filtrar elementos por tamaño de caracteres.
+const words = ['spray', 'limit', 'elite', 'exuberant'];
+
+// Filtro con Filter
+const rta = words.filter(item => item.length >= 6)
+console.log('rta', rta);
+console.log('original', words );
+```
