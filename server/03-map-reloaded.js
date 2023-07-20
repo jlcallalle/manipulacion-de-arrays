@@ -48,8 +48,7 @@ console.log("original", orders);
 
 
 /* 
-Ejercicio: 
-
+EJERCICIO MAP: 
 Tienes un array de objetos que representan datos de productos con los siguientes atributos:
 
 Input:

@@ -14,7 +14,8 @@ for (let index = 0; index < letters.length; index++) {
 console.log('original', letters);
 console.log('new', newArray);
 
-// Ejercicio multiplicar x 2 array
+
+// EJERCICIO DUPLICAR
 
 const numbers = [2, 4, 5, 6, 8];
 
