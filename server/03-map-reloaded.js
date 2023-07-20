@@ -45,3 +45,55 @@ const rta3 = orders.map((item) => {
 });
 console.log("rta3", rta3);
 console.log("original", orders);
+
+
+/* 
+Ejercicio: 
+
+Tienes un array de objetos que representan datos de productos con los siguientes atributos:
+
+Input:
+[
+  {
+    name: "Product 1",
+    price: 1000,
+    stock: 10
+  },
+  {
+    name: "Product 2",
+    price: 2000,
+    stock: 20
+  }
+]
+
+Tu reto es agregar y calcular una nueva propiedad llamada "taxes", los impuestos deben ser del 19% con base al precio base y debes tener en cuenta que como resultado se debe dejar un valor entero, sin decimales.
+*/
+
+
+const array = [
+  {
+    name: "Product 1",
+    price: 1000,
+    stock: 10
+  },
+  {
+    name: "Product 2",
+    price: 2000,
+    stock: 20
+  }
+];
+
+
+function addNewAttr(array) {
+  return array.map((item) => {
+    return {
+      ...item,
+      tax: Math.trunc( item.price * .19 )
+    };
+  });
+}
+
+const newArrayWithTax =addNewAttr(array);
+console.log("original", array);
+console.log("rta", newArrayWithTax);
+
