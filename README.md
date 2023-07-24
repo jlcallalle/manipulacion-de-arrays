@@ -159,16 +159,24 @@ console.log('rta reduce', rta);
 ### Some
 El método somees inmutable y consiste retornar un valor lógico verdadero, si existe al menos un elemento que cumpla la condición establecida en la función (callback).
 
-Este método recibe dos argumentos:
-La función que itera y evalúa cada elemento del array hasta que al menos uno cumpla con la condición especificada (obligatorio).
-Un objeto al que puede hacer referencia el contexto this en la función. Si se lo omite, será undefined. 
-Recuerde que this en arrow functions es el objeto global.
-
 plugin date-fns: manipulación de fecha, solo impacta en el peso la función que se usa.
 
 ```js
+// Calcular si existe al menos 1 elemento par
 const numbers = [1, 2, 3, 4];
 
-const rta = totals.reduce((sum, element) => sum + element, 0)
-console.log('rta reduce', rta);
+const rta2 = numbers.some((item) => item % 2 === 0);
+console.log("rta2", rta2);
+```
+
+### Every
+
+El método everyes inmutable y consiste retornar un valor lógico verdadero si todos los elementos cumplen con la condición establecida en la función (callback).
+
+```js
+// Calcular si todos los elementos son menores a 40
+const numbers = [1, 2, 3, 4];
+
+const rta2 = numbers.every(item => item <= 40)
+console.log('rta2', rta2);
 ```
