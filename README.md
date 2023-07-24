@@ -155,3 +155,20 @@ const totals = [1,2,3,4];
 const rta = totals.reduce((sum, element) => sum + element, 0)
 console.log('rta reduce', rta);
 ```
+
+### Some
+El método somees inmutable y consiste retornar un valor lógico verdadero, si existe al menos un elemento que cumpla la condición establecida en la función (callback).
+
+Este método recibe dos argumentos:
+La función que itera y evalúa cada elemento del array hasta que al menos uno cumpla con la condición especificada (obligatorio).
+Un objeto al que puede hacer referencia el contexto this en la función. Si se lo omite, será undefined. 
+Recuerde que this en arrow functions es el objeto global.
+
+plugin date-fns: manipulación de fecha, solo impacta en el peso la función que se usa.
+
+```js
+const numbers = [1, 2, 3, 4];
+
+const rta = totals.reduce((sum, element) => sum + element, 0)
+console.log('rta reduce', rta);
+```
