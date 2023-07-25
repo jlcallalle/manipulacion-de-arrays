@@ -180,3 +180,21 @@ const numbers = [1, 2, 3, 4];
 const rta2 = numbers.every(item => item <= 40)
 console.log('rta2', rta2);
 ```
+
+### Find y FindIndex
+Los métodos find y findIndex consisten en encontrar el primer elemento de un array que cumpla con la condición especificada en la función (callback).
+
+Filter, retorna 1 array de un solo elemento en cambio
+Find, ternona directamente el objeto que cumple con la condicional
+
+En el caso de find retornará el elemento completo, si cumple con la condición, caso contrario retornará undefined. 
+El método findIndex retornará el índice del elemento encontrado, caso contrario retornará -1.
+
+```js
+// Calcular si todos los elementos son menores a 40
+cnst numbers = [1,30,49,29,10,13];
+
+const rta2 = numbers.find(item => item === 30)
+console.log('find', rta2);
+
+```
