@@ -15,3 +15,9 @@ const title = 'Curso de manipulación de arrays';
 
 const urlFinal = title.split(' ').join('-').toLowerCase();
 console.log(urlFinal);
+
+/* export function parseToURL(title) {
+    const result = title.split(' ').join('-').toLowerCase();
+    return result
+  }
+   */
