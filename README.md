@@ -214,3 +214,19 @@ const pets = ['cat', 'dog', 'bat'];
 const rta = pets.includes('dog')
 console.log('includes', rta);
 ```
+
+
+### Join
+El método join une los elementos del array, mediante una separación, y retorna un string. Si un elemento es undefined o null, se convierte en una cadena vacía.
+
+Este procedimiento recibe un argumento:
+
+La separación de cada elemento del array al unirlos.
+
+```js
+const elements = ["Fire", "Air", "Water"];
+
+const rta = elements.join('--')
+console.log('join', rta);
+```
+
