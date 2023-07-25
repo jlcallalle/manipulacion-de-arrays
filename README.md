@@ -192,9 +192,25 @@ El método findIndex retornará el índice del elemento encontrado, caso contrar
 
 ```js
 // Calcular si todos los elementos son menores a 40
-cnst numbers = [1,30,49,29,10,13];
+const numbers = [1,30,49,29,10,13];
 
 const rta2 = numbers.find(item => item === 30)
 console.log('find', rta2);
 
+```
+
+
+### Includes
+El método includes determina si un array o string incluye un determinado elemento. Devuelve true o false, si existe o no respectivamente.
+
+Este método recibe dos argumentos:
+El elemento a comparar.
+El índice inicial desde donde comparar hasta el último elemento
+
+```js
+// Calcular si se encuentra la palabra dog en el array
+const pets = ['cat', 'dog', 'bat'];
+
+const rta = pets.includes('dog')
+console.log('includes', rta);
 ```
