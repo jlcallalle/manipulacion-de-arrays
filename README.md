@@ -286,3 +286,12 @@ console.log("map-flat", rta);
 console.log("rta2", rta2);
 
 ```
+
+### mutable
+Las funciones mutables consisten en cambiar el array original. Estos métodos son:
+- push
+- unshift
+- pop
+- shift
+- splice
+- sort
