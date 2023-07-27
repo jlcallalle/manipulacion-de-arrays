@@ -244,3 +244,24 @@ const othersElements = [3,3,4,4];
 const rta = elements.concat(othersElements);
 console.log('concat', rta);
 ```
+
+### Flat
+El método flat es inmutable que consiste en retornar un array donde los sub-arrays han sido aplanados hasta una profundidad especificada. El aplanamiento consiste en transformar un array de arrays a una sola dimensión.
+
+Este procedimiento recibe un argumento:
+La profundidad del aplanamiento, por defecto, tiene un valor de 1. Si se desea aplanar todos los sub-arrays en una sola dimensión, utiliza el valor de Infinity.
+
+array.flat(profundidad)
+
+
+```js
+const matriz = [
+    [1,2,3],
+    [4,5,6, [1,2, [1,2]]],
+    [7,8,9]
+];
+
+
+const rta = matriz.flat(3);
+console.log('flat', rta);
+```
