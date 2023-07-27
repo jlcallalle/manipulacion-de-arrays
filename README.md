@@ -265,3 +265,24 @@ const matriz = [
 const rta = matriz.flat(3);
 console.log('flat', rta);
 ```
+
+### Flatmap
+El método flatMap es inmutable y consiste en la combinación de los métodos map y flat. 
+Primero realiza la iteración de los elementos del array (como si fuera map), y después los aplana en una sola profundidad (como si fuera flat).
+
+Este procedimiento recibe los mismos argumentos que el método map.
+
+```js
+const users = [
+  { userId: 1, username: "Tom", attributes: ["Nice", "Cute"] },
+  { userId: 2, username: "Mike", attributes: ["Lovely"] },
+  { userId: 3, username: "Nico", attributes: ["Nice", "Cool"] },
+];
+
+// combinación de map y flat
+const rta = users.map((user) => user.attributes).flat();
+const rta2 = users.flatMap((user) => user.attributes);
+console.log("map-flat", rta);
+console.log("rta2", rta2);
+
+```
