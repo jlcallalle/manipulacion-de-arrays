@@ -287,7 +287,7 @@ console.log("rta2", rta2);
 
 ```
 
-### mutable
+### Mutable
 Las funciones mutables consisten en cambiar el array original. Estos métodos son:
 - push
 - unshift
@@ -295,3 +295,22 @@ Las funciones mutables consisten en cambiar el array original. Estos métodos so
 - shift
 - splice
 - sort
+
+### Sort
+l método sort es mutable y consiste en ordenar un array a partir de los valores Unicode de los caracteres y este retorna un array con la misma referencia en memoria que el original.
+
+Este proceso recibe un argumento:
+Una función de comparación que compara cada elemento con otro. Por defecto, evalúa el valor Unicode del caracter.
+
+let sortedArray = array.sort(function())
+
+
+
+```js
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months); 
+const numbers = [1, 30, 4, 21, 100000];
+numbers.sort((a,b) => b - a);
+console.log(numbers);
+```

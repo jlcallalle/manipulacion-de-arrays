@@ -41,3 +41,6 @@ productsV2[productIndexV2] = {
     ...update.changes,
 };
 console.log(productsV2);
+
+// eliminar un elimento sin modificar origian 
+// 
